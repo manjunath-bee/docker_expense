@@ -1,4 +1,5 @@
-FROM node:20
+#FROM node:20
+FROM node:alpine3.20
 WORKDIR /app
 COPY *.js .
 COPY package.json .

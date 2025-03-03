@@ -2,7 +2,7 @@
 FROM node:alpine3.20
 RUN addgroup -S expense && adduser -S expense -G expense
 RUN mkdir /app
-RIN chown -R enpense:expense /app
+RUN chown -R enpense:expense /app
 WORKDIR /app
 COPY *.js .
 COPY package.json .

@@ -1,7 +1,7 @@
 #FROM nginx
 FROM nginx:stable-alpine3.20-perl
-RUN rm -rf /etc/nginx/conf.d/default.conf
-RUN rm -rf /etc/nginx/nginx.conf
+# RUN rm -rf /etc/nginx/conf.d/default.conf
+# RUN rm -rf /etc/nginx/nginx.conf
 RUN mkdir -p /var/cache/nginx/client_temp && \
  x/nginx.conf       mkdir -p /var/cache/nginx/proxy_temp && \
         mkdir -p /var/cache/nginx/fastcgi_temp && \

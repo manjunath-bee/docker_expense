@@ -17,6 +17,7 @@ RUN mkdir -p /etc/nginx/ssl/ && \
 RUN touch /var/run/nginx.pid && \
     chown -R nginx:nginx /var/run/nginx.pid /run/nginx.pid
 RUN rm -rf /usr/share/nginx/html/index.html
+RUN rm -rf /etc/nginx/conf.d/default.conf
 COPY code /usr/share/nginx/html/
 COPY nginx.conf /etc/nginx/nginx.conf
 USER nginx
